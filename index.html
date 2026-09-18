@@ -508,19 +508,19 @@
         <form id="demoForm" action="https://formspree.io/f/mbglrddr" method="POST">
           <div class="field">
             <label for="name">Name</label>
-            <input type="text" id="name" required>
+            <input type="text" id="name" name="name" required>
           </div>
           <div class="field">
             <label for="email">Email</label>
-            <input type="email" id="email" required>
+            <input type="email" id="email" name="email" required>
           </div>
           <div class="field">
             <label for="org">Team or program</label>
-            <input type="text" id="org" required>
+            <input type="text" id="org" name="org" required>
           </div>
           <div class="field">
             <label for="level">Level</label>
-            <select id="level">
+            <select id="level" name="level">
               <option>Youth / High school</option>
               <option>College</option>
               <option>Professional</option>
@@ -529,16 +529,16 @@
           <div class="field">
             <label>Sport</label>
             <div class="checks">
-              <label><input type="checkbox" checked> Football</label>
-              <label><input type="checkbox"> Basketball</label>
-              <label><input type="checkbox"> Baseball</label>
-              <label><input type="checkbox"> Softball</label>
-              <label><input type="checkbox"> Soccer</label>
+              <label><input type="checkbox" name="checks" checked> Football</label>
+              <label><input type="checkbox" name="checks"> Basketball</label>
+              <label><input type="checkbox" name="checks"> Baseball</label>
+              <label><input type="checkbox" name="checks"> Softball</label>
+              <label><input type="checkbox" name="checks"> Soccer</label>
             </div>
           </div>
           <div class="field">
             <label for="msg">What are you filming, and how often?</label>
-            <textarea id="msg" rows="3"></textarea>
+            <textarea id="msg" rows="3" name="msg"></textarea>
           </div>
           <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">Request a demo</button>
           <p class="form-note">We'll follow up within one business day.</p>
