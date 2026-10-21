@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — SportyClipper</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a href="index.html" class="wordmark"><span class="mark"></span>SportyClipper</a>
+    <ul class="nav-links">
+      <li><a href="index.html#product">Product</a></li>
+      <li><a href="index.html#audience">Who it's for</a></li>
+      <li><a href="about.html" aria-current="page">About Us</a></li>
+      <li><a href="index.html#demo">Get a Demo</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="index.html#demo" class="btn btn-primary" style="padding:11px 20px;">Get a Demo</a>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mobilePanel">Menu</button>
+    </div>
+  </nav>
+  <div class="mobile-panel" id="mobilePanel" style="flex-direction:column; padding:0 28px 18px; gap:2px;">
+    <a href="index.html#product" style="color:#fff;padding:10px 0;text-decoration:none;">Product</a>
+    <a href="index.html#audience" style="color:#fff;padding:10px 0;text-decoration:none;">Who it's for</a>
+    <a href="about.html" aria-current="page" style="color:#fff;padding:10px 0;text-decoration:none;">About Us</a>
+    <a href="index.html#demo" style="color:#fff;padding:10px 0;text-decoration:none;">Get a Demo</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="wrap">
+      <div class="aud-kicker">About Us</div>
+      <h1>We built the tool we wished we'd had on the sideline.</h1>
+      <p>SportyClipper exists so coaches, scouts, parents, and athletes can spend their time on the game, not on a video timeline.</p>
+    </div>
+  </section>
+
+  <!-- TODO: replace placeholder company story, founder names, roles, and bios -->
+
+  <!-- STORY -->
+  <section class="about">
+    <div class="wrap">
+      <div>
+        <h2>Our story</h2>
+      </div>
+      <div>
+        <p class="lede">SportyClipper started on the sidelines. We spent too many nights scrubbing through game film to find a handful of plays, and we knew the hours were better spent coaching, recruiting, and watching the game.</p>
+        <p class="lede" style="margin-bottom:0;">So we built AI that clips the film for you, whether you need it live or after the final whistle. Today we work with teams from youth leagues to college programs, and our goal hasn't changed: get every team the film that matters, fast.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOUNDERS -->
+  <section class="founders">
+    <div class="wrap">
+      <h2>Meet the founders</h2>
+      <p class="lede">The people behind SportyClipper.</p>
+      <div class="founder-grid">
+        <div class="founder-card">
+          <div class="founder-avatar" aria-hidden="true">FN</div>
+          <h3>Founder Name</h3>
+          <div class="founder-role">Co-Founder &amp; CEO</div>
+          <p>A short bio for this founder: their background in sports or coaching, what they did before SportyClipper, and why they care about getting film to teams faster.</p>
+        </div>
+        <div class="founder-card">
+          <div class="founder-avatar" aria-hidden="true">FN</div>
+          <h3>Founder Name</h3>
+          <div class="founder-role">Co-Founder &amp; CTO</div>
+          <p>A short bio for this founder: their technical background, the problems they've solved before, and what they bring to building SportyClipper's AI.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="page-cta">
+    <div class="wrap">
+      <h2>See it on your own film.</h2>
+      <p class="lede">Tell us about your team and we'll show you how fast SportyClipper can turn your next game around.</p>
+      <a href="index.html#demo" class="btn btn-primary">Get a Demo</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <a href="index.html" class="wordmark"><span class="mark"></span>SportyClipper</a>
+        <p style="max-width:280px; font-size:.88rem; margin-top:14px; color:var(--cloud);">Sports film, on demand.</p>
+      </div>
+      <div class="foot-links">
+        <div class="foot-col">
+          <h4>Product</h4>
+          <a href="index.html#product">Real-time</a>
+          <a href="index.html#product">Post-Game</a>
+        </div>
+        <div class="foot-col">
+          <h4>Who it's for</h4>
+          <a href="index.html#audience">Large Programs</a>
+          <a href="index.html#audience">Youth &amp; High School</a>
+        </div>
+        <div class="foot-col">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+        </div>
+        <div class="foot-col">
+          <h4>Get started</h4>
+          <a href="index.html#demo">Request a Demo</a>
+          <a href="mailto:hello@sportyclipper.com">hello@sportyclipper.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 SportyClipper</span>
+      <span>Football · Baseball · Softball</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // mobile nav
+  const navToggle = document.getElementById('navToggle');
+  const mobilePanel = document.getElementById('mobilePanel');
+  navToggle.addEventListener('click', ()=>{
+    const open = mobilePanel.classList.toggle('open');
+    navToggle.setAttribute('aria-expanded', open);
+  });
+</script>
+
+</body>
+</html>
