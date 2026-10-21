@@ -172,9 +172,9 @@
   /* ---------- problem section ---------- */
   .problem{ background:#fff; }
   .problem .wrap{ display:grid; grid-template-columns:1fr 1fr; gap:70px; align-items:start; }
-  .stat-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:0; border-top:1px solid var(--line); margin-top:8px; }
-  .stat-grid div{ padding:22px 18px 0 0; border-left:1px solid var(--line); padding-left:18px; }
-  .stat-grid div:first-child{ border-left:none; padding-left:0; }
+  .stat-grid{ display:grid; grid-template-columns:1fr; gap:0; border-top:1px solid var(--line); margin-top:8px; }
+  .stat-grid > div{ padding:22px 18px 0 0; border-left:1px solid var(--line); padding-left:18px; }
+  .stat-grid > div:first-child{ border-left:none; padding-left:0; }
   .stat-num{ font-size:2.1rem; font-weight:600; color:var(--navy-800); }
   .stat-cap{ font-size:.86rem; color:var(--ink-soft); margin-top:4px; line-height:1.4; }
 
@@ -310,8 +310,8 @@
     .logo-text{ font-size:1.65rem; }
     .logo-tagline{ margin-left:58px; }
     .stat-grid{ grid-template-columns:1fr; }
-    .stat-grid div{ border-left:none; border-top:1px solid var(--line); padding:18px 0 0; }
-    .stat-grid div:first-child{ border-top:none; }
+    .stat-grid > div{ border-left:none; border-top:1px solid var(--line); padding:18px 0 0; }
+    .stat-grid > div:first-child{ border-top:none; }
     .founder-grid{ grid-template-columns:1fr; }
     .founder-card + .founder-card{ border-left:none; border-top:1px solid var(--line); }
   }
