@@ -23,7 +23,7 @@
     background:#fff;
     -webkit-font-smoothing:antialiased;
   }
-  h1,h2,h3,.wordmark,.stat-num{
+  h1,h2,h3,.stat-num{
     font-family:'Oswald',sans-serif;
   }
   .mono{ font-family:'Roboto Mono',monospace; }
@@ -84,15 +84,16 @@
     height:72px;
   }
   .wordmark{
-    display:flex; align-items:center; gap:9px;
-    color:#fff; font-size:1.28rem; font-weight:700; letter-spacing:.3px;
-    text-decoration:none;
+    display:flex; align-items:center; gap:14px;
+    color:#fff; text-decoration:none;
   }
-  .wordmark .mark{
-    width:16px; height:22px;
-    border-left:4px solid var(--flare);
-    border-right:4px solid var(--flare);
+  .logo-icon{ width:53px; height:53px; flex:none; }
+  .logo-text{
+    font-family:'Outfit',sans-serif; font-weight:500;
+    font-size:1.98rem; letter-spacing:-.2px; line-height:1;
   }
+  .logo-text span{ color:#ee7249; }
+  .logo-tagline{ font-size:.9rem; color:var(--cloud); margin:12px 0 0 67px; }
   .nav-links{
     display:flex; align-items:center; gap:34px;
     list-style:none; margin:0; padding:0;
@@ -304,6 +305,10 @@
     .mobile-panel.open{ display:flex; }
   }
   @media (max-width: 560px){
+    .nav-cta .btn{ display:none; }
+    .logo-icon{ width:44px; height:44px; }
+    .logo-text{ font-size:1.65rem; }
+    .logo-tagline{ margin-left:58px; }
     .stat-grid{ grid-template-columns:1fr; }
     .stat-grid div{ border-left:none; border-top:1px solid var(--line); padding:18px 0 0; }
     .stat-grid div:first-child{ border-top:none; }
