@@ -260,6 +260,7 @@
   .founder-card h3{ font-size:1.25rem; font-weight:600; margin:0 0 4px; }
   .founder-role{ font-size:.86rem; color:var(--flare-dark); font-weight:600; margin-bottom:14px; }
   .founder-card p{ color:var(--ink-soft); line-height:1.65; margin:0; font-size:.95rem; }
+  .founder-card p + p{ margin-top:12px; }
 
   /* ---------- demo form ---------- */
   .demo{ background:var(--mist); }
